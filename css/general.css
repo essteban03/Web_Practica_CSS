@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+/* bloque del body */
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2efef;
+    color: #222;
+    line-height: 1.6;
+}
+/* SELECTORES DE etiquetas  con estilos */
+h1{
+    margin: 0;
+    font-size: 34px;
+    text-align: center;
+}
+h2{
+    color: #1b7505;
+    margin-top: 0;
+    border-bottom: 2px solid #dba112;
+    padding-bottom: 6px;
+} 
+
+h3 {
+    color:#222
+}
+
+p{
+    font-size: 16px;
+    text-align: justify;
+}
+
+a{
+    color:#a1c1c8;
+    text-decoration: none;
+
+}
+/*  ETIQUETA CON UNA ACCION*/
+a:hover{ 
+    text-decoration: underline;
+    color:#9dc6c9
+}
+/* BLOQUE DE ENCABEZADO */
+header{
+    background-color: #0d1910;
+    color: white;
+    padding: 28px 16px;
+    text-align: center;
+    border-radius: 4px;
+
+}
+
+header p{
+    text-align: center;
+    margin-bottom: 0;
+}
+/* BLOQUE DEL PIE DE PAGINA */
+footer{
+    background-color: #0d1910;
+    color: white;
+    text-align:center;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 4px;
+
+}
+footer address { 
+    font-style: normal;
+}
+/* BLOQUE 5 DE NAVEGACION */
+nav{
+    background-color: #064b68;
+    padding: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+nav a{
+    background-color: white;
+    color:#0d1910;
+    padding: 1px 4px;
+    border-radius: 6px;
+    font-weight: bold;
+    border: 1px solid #a8a8a7;
+}
+
+nav a:hover{
+    background-color: #9dc6c9;
+    color: white;
+    text-decoration: none;
+}
+
+/* BLOQUE 6 ESTRUCTURA PRINCIPAL */
+main{
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto;
+}
