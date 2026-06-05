@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
  
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
  
 <body>
@@ -25,20 +26,20 @@
     <!-- Menú de navegación principal -->
      
     <nav>
-        <a href="index.html">
+        <a class = "class_btn_nav" id = "inicio" href="index.html">
             <i class="fa-solid fa-house"></i>
             Inicio
         </a>
  
-        <a href="#objetivo">Objetivo</a> 
+        <a class = "class_btn_nav_2" id = "objetivo" href="#objetivo">Objetivo</a> 
  
-        <a href="#intereses">Intereses</a>
+        <a class = "class_btn_nav" id = "intereses" href="#intereses">Intereses</a>
  
-        <a href="#multimedia">Multimedia</a>
+        <a class = "class_btn_nav_2" id = "multimedia" href="#multimedia">Multimedia</a>
  
-        <a href="pages/buscar.html">Buscar</a>
+        <a class = "class_btn_nav" id = "buscar" href="pages/buscar.html">Buscar</a>
  
-        <a href="pages/cto/contacto.html">
+        <a class = "class_btn_nav_2" id = "contacto" href="pages/cto/contacto.html">
             <i class="fa-solid fa-envelope"></i>
             Contacto
         </a>
@@ -61,7 +62,7 @@
     </aside>
  
     <!-- Contenido principal -->
-    <main>
+    <main id = "main">
  
         <!-- Sección de presentación -->
         <section id="presentacion">
@@ -110,7 +111,7 @@
         </section>
  
         <!-- Sección de pasos -->
-        <section>
+        <section id ="intereses">
             <h2>Pasos para estudiar HTML</h2>
  
             <ol>
@@ -137,7 +138,7 @@
         <section id="multimedia">
             <h2>Contenido multimedia</h2>
  
-            <article>
+            <article id = "multimedia">
                 <h3>Video local</h3>
  
                 <video src="video/videoEjemploDiagnostica.mp4" controls width="400"
@@ -351,7 +352,7 @@
                 &copy; representa derechos de autor.
             </p>
  
-            <p>
+            <p class ="nota">
                 Última actualización:
                 <time datetime="2026-05-28">28 de mayo de 2026</time>.
             </p>

@@ -1,0 +1,66 @@
+/* BLOQUE 1: Estilos para los enlaces */
+
+
+.class_btn_nav{
+    border-left: 5px solid #dba112;
+}
+
+.class_btn_nav_2{
+    border-left: 5px solid #1b7505;
+}
+/* BLOQUE 2: Estilos para la lista */
+#intereses li {
+    background-color: #f0f0f0;
+    margin-bottom: 6px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+#intereses ol {
+    padding-left: 28px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: #e0e0e0;
+}
+
+/* BLOQUE 3: MULTIMEDIA */
+#multimedia article{
+    background-color: #d9d5d5;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+#multimedia h3{
+    color: #1b7505;
+    margin-top: 0;
+}
+
+/* BLOQUE 4: FIGURE E IMAGEN */
+section form{
+
+    padding: 15px;
+    margin-top: 16px;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+}
+section form input{
+    border-left: 5px solid #1b7505;
+}
+main figure{
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+/* BLOQUE 5: NOTA IMPORTANTE */
+.nota{
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    padding: 10px;
+    font-size: 14px;
+    border-left:#1b7505 solid 5px;
+}
