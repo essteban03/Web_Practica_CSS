@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+ 
+<head>
+    <meta charset="UTF-8">
+    <title>Portafolio</title>
+ 
+    <link rel="icon" href="../img/mundito.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/portafolio.css">
+</head>
+ 
+<body>
+ 
+    <!-- Encabezado -->
+    <header>
+        <h1>Mi Portafolio Web</h1>
+        <p>Fundamentos de Sistemas Web — ITIN</p>
+    </header>
+ 
+    <!-- Menú de navegación -->
+    <nav>
+        <a class="class_btn_nav" href="../index.html">
+            <i class="fa-solid fa-house"></i>
+            Inicio
+        </a>
+ 
+        <a class="class_btn_nav_2 active" href="portafolio.html">
+            <i class="fa-solid fa-folder"></i>
+            Portafolio
+        </a>
+ 
+        <a class="class_btn_nav" href="buscar.html">Buscar</a>
+ 
+        <a class="class_btn_nav_2" href="cto/contacto.html">
+            <i class="fa-solid fa-envelope"></i>
+            Contacto
+        </a>
+    </nav>
+ 
+    <!-- Contenido principal -->
+    <main id="main">
+ 
+        <!-- Sección introductoria -->
+        <section id="intro">
+            <div class="intro-text">
+                <h2>Bienvenido a mi Portafolio</h2>
+                <p>
+                    Esta página documenta mi recorrido de aprendizaje en la materia
+                    <strong>Fundamentos de Sistemas Web</strong>. Aquí encontrarás los conceptos
+                    que he dominado, proyectos realizados y mis metas profesionales como
+                    futuro Ingeniero en Tecnologías de la Información.
+                </p>
+                <div class="intro-badges">
+                    <span class="badge">HTML5</span>
+                    <span class="badge">CSS3</span>
+                    <span class="badge">Diseño Responsivo</span>
+                    <span class="badge">Box Model</span>
+                    <span class="badge">Flexbox</span>
+                </div>
+            </div>
+ 
+            <figure class="intro-figure">
+                <img src="../img/esteban.jpeg" alt="Foto de perfil" class="profile-img">
+                <figcaption>Esteban — Estudiante ITIN</figcaption>
+            </figure>
+        </section>
+ 
+        <!-- Artículos / Cards -->
+        <section id="proyectos">
+            <h2>Proyectos Desarrollados</h2>
+            <p>Trabajos realizados durante la Unidad 2 de la materia.</p>
+ 
+            <div class="cards-grid">
+ 
+                <article class="card" id="card-html">
+                    <h3 class="card-title">Sitio Web Multipage</h3>
+                    <p class="card-description">
+                        Desarrollo de un sitio web con múltiples páginas interconectadas
+                        usando HTML semántico, formularios y navegación entre páginas.
+                    </p>
+                    <ul>
+                        <li>Estructura semántica HTML5</li>
+                        <li>Formularios con validación</li>
+                        <li>Navegación interna</li>
+                        <li>Hojas de estilo externas</li>
+                    </ul>
+                    <br>
+                    <span class="card-tag">HTML5</span>
+                </article>
+ 
+                <article class="card" id="card-css">
+                    <h3 class="card-title">Estilización con CSS3</h3>
+                    <p class="card-description">
+                        Aplicación de estilos usando selectores, el box model, Flexbox
+                        y media queries para lograr un diseño responsivo.
+                    </p>
+                    <ul>
+                        <li>Box Model completo</li>
+                        <li>Flexbox layouts</li>
+                        <li>Selectores y pseudo-clases</li>
+                        <li>Variables y colores</li>
+                    </ul>
+                    <br>
+                    <span class="card-tag">CSS3</span>
+                </article>
+ 
+                <article class="card" id="card-responsive">
+                    <h3 class="card-title">Diseño Responsivo</h3>
+                    <p class="card-description">
+                        Implementación de media queries para adaptar el sitio a
+                        diferentes tamaños de pantalla: escritorio, tablet y móvil.
+                    </p>
+                    <ul>
+                        <li>Media queries a 700px</li>
+                        <li>Imágenes fluidas</li>
+                        <li>Navegación adaptable</li>
+                        <li>Formularios responsivos</li>
+                    </ul>
+                    <br>
+                    <span class="card-tag">Responsive</span>
+                </article>
+ 
+                <article class="card" id="card-git">
+                    <h3 class="card-title">Control de Versiones</h3>
+                    <p class="card-description">
+                        Gestión del proyecto en un repositorio público de GitHub con
+                        estructura organizada y README documentado.
+                    </p>
+                    <ul>
+                        <li>Repositorio público</li>
+                        <li>README completo</li>
+                        <li>Estructura de carpetas</li>
+                        <li>Documentación clara</li>
+                    </ul>
+                    <br>
+                    <span class="card-tag">GitHub</span>
+                </article>
+ 
+            </div>
+        </section>
+ 
+        <!-- Tabla de habilidades -->
+        <section id="habilidades">
+            <h2>Tabla de Habilidades y Progreso</h2>
+            <p>Evaluación de los conocimientos adquiridos en la Unidad 2.</p>
+ 
+            <table>
+                <caption>Habilidades en Desarrollo Web</caption>
+                <thead>
+                    <tr>
+                        <th>Tema</th>
+                        <th>Descripción</th>
+                        <th>Nivel</th>
+                        <th>Progreso</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="topic-cell">HTML Semántico</td>
+                        <td>Uso de etiquetas semánticas: header, nav, main, article, footer</td>
+                        <td><span class="level level-advanced">Avanzado</span></td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%">90%</div>
+                            </div>
+                        </td>
+                        <td><span class="status status-done">✔ Completado</span></td>
+                    </tr>
+                    <tr>
+                        <td class="topic-cell">Selectores CSS</td>
+                        <td>Clases, IDs, pseudo-clases y selectores combinados</td>
+                        <td><span class="level level-advanced">Avanzado</span></td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%">85%</div>
+                            </div>
+                        </td>
+                        <td><span class="status status-done">✔ Completado</span></td>
+                    </tr>
+                    <tr>
+                        <td class="topic-cell">Box Model</td>
+                        <td>Comprensión de margin, border, padding y content</td>
+                        <td><span class="level level-intermediate">Intermedio</span></td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%">80%</div>
+                            </div>
+                        </td>
+                        <td><span class="status status-done">✔ Completado</span></td>
+                    </tr>
+                    <tr>
+                        <td class="topic-cell">Flexbox</td>
+                        <td>Diseño de layouts flexibles con display: flex</td>
+                        <td><span class="level level-intermediate">Intermedio</span></td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%">75%</div>
+                            </div>
+                        </td>
+                        <td><span class="status status-done">✔ Completado</span></td>
+                    </tr>
+                    <tr>
+                        <td class="topic-cell">Media Queries</td>
+                        <td>Adaptación del diseño a pantallas de 700px o menos</td>
+                        <td><span class="level level-intermediate">Intermedio</span></td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%">70%</div>
+                            </div>
+                        </td>
+                        <td><span class="status status-done">✔ Completado</span></td>
+                    </tr>
+                    <tr>
+                        <td class="topic-cell">CSS Grid</td>
+                        <td>Estructuración de layouts en dos dimensiones</td>
+                        <td><span class="level level-basic">Básico</span></td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 50%">50%</div>
+                            </div>
+                        </td>
+                        <td><span class="status status-progress">⏳ En Progreso</span></td>
+                    </tr>
+                    <tr>
+                        <td class="topic-cell">GitHub</td>
+                        <td>Gestión de repositorios públicos con commits organizados</td>
+                        <td><span class="level level-basic">Básico</span></td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 60%">60%</div>
+                            </div>
+                        </td>
+                        <td><span class="status status-progress">⏳ En Progreso</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+ 
+        <!-- Metas profesionales -->
+        <section id="metas">
+            <h2>Metas Profesionales</h2>
+            <p>Objetivos a alcanzar como futuro Ingeniero en Tecnologías de la Información.</p>
+ 
+            <div class="goals-grid">
+ 
+                <div class="goal-item" id="meta-graduacion">
+                    <span class="goal-icon">🎓</span>
+                    <h4>Graduarme como Ingeniero ITIN</h4>
+                    <p>Completar la carrera con sólidas bases en desarrollo web y sistemas.</p>
+                </div>
+ 
+                <div class="goal-item" id="meta-fullstack">
+                    <span class="goal-icon">💻</span>
+                    <h4>Desarrollador Full Stack</h4>
+                    <p>Dominar tecnologías frontend y backend para construir aplicaciones web completas.</p>
+                </div>
+ 
+                <div class="goal-item" id="meta-emprendimiento">
+                    <span class="goal-icon">🚀</span>
+                    <h4>Emprendimiento Tecnológico</h4>
+                    <p>Aplicar los conocimientos para lanzar proyectos propios de tecnología.</p>
+                </div>
+ 
+            </div>
+        </section>
+ 
+    </main>
+ 
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Portafolio Web — PracticaCSSFinal</p>
+        <p>Fundamentos de Sistemas Web — ITIN</p>
+        <address>
+            Ecuador<br>
+            Desarrollado con HTML5 &amp; CSS3
+        </address>
+    </footer>
+ 
+</body>
+</html>

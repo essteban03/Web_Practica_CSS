@@ -1,0 +1,251 @@
+/* ============================================================
+   BLOQUE 1: HEADER
+   ============================================================ */
+ 
+.header-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+ 
+.header-logo {
+    width: 40px;
+    height: 40px;
+}
+ 
+/* ============================================================
+   BLOQUE 2: NAVEGACIÓN — clases del portafolio
+   ============================================================ */
+ 
+.class_btn_nav,
+.class_btn_nav_2 {
+    background-color: white;
+    color: #0d1910;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    border: 1px solid #a8a8a7;
+    font-size: 15px;
+    text-decoration: none;
+}
+ 
+.class_btn_nav:hover,
+.class_btn_nav_2:hover {
+    background-color: #9dc6c9;
+    color: white;
+    text-decoration: none;
+}
+ 
+.class_btn_nav_2.active,
+.class_btn_nav.active {
+    background-color: #064b68;
+    color: white;
+}
+ 
+/* ============================================================
+   BLOQUE 3: SECCIÓN INTRO
+   ============================================================ */
+ 
+#intro {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+ 
+.intro-text {
+    flex: 1;
+}
+ 
+.intro-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+ 
+.badge {
+    background-color: #064b68;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 13px;
+    font-weight: bold;
+}
+ 
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #1b7505;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 8px;
+}
+ 
+/* ============================================================
+   BLOQUE 4: CARDS / ARTÍCULOS
+   ============================================================ */
+ 
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 12px;
+}
+ 
+.card {
+    width: calc(50% - 8px);
+    background-color: #f9f9f9;
+    border-left: 4px solid #1b7505;
+    border-radius: 4px;
+    padding: 14px 18px;
+}
+ 
+.card-title {
+    color: #064b68;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+ 
+.card-description {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+ 
+.card-tag {
+    background-color: #064b68;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+}
+ 
+/* IDs individuales por card */
+#card-html       { border-left-color: #e44d26; }
+#card-css        { border-left-color: #264de4; }
+#card-responsive { border-left-color: #1b7505; }
+#card-git        { border-left-color: #064b68; }
+ 
+/* ============================================================
+   BLOQUE 5: TABLA — ya hereda estilos de general.css,
+   solo se agrega lo específico de la tabla de habilidades
+   ============================================================ */
+ 
+.topic-cell {
+    font-weight: bold;
+    color: #064b68;
+}
+ 
+.level {
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+ 
+.level-advanced     { background-color: #d4edda; color: #1e7e34; }
+.level-intermediate { background-color: #fff3cd; color: #856404; }
+.level-basic        { background-color: #e2e6ea; color: #495057; }
+ 
+.progress-bar {
+    background-color: #e2e6ea;
+    border-radius: 10px;
+    height: 18px;
+    min-width: 100px;
+    overflow: hidden;
+    border: 1px solid #d9d9d9;
+}
+ 
+.progress-fill {
+    height: 100%;
+    background-color: #1b7505;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 6px;
+}
+ 
+.status {
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+ 
+.status-done     { background-color: #d4edda; color: #1e7e34; }
+.status-progress { background-color: #fff3cd; color: #856404; }
+ 
+/* ============================================================
+   BLOQUE 6: METAS PROFESIONALES
+   ============================================================ */
+ 
+.goals-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 12px;
+}
+ 
+.goal-item {
+    background-color: #f9f9f9;
+    border-left: 4px solid #064b68;
+    border-radius: 4px;
+    padding: 14px 18px;
+    width: calc(33.33% - 12px);
+}
+ 
+.goal-icon {
+    font-size: 1.8rem;
+    display: block;
+    margin-bottom: 8px;
+}
+ 
+.goal-item h4 {
+    color: #064b68;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+ 
+.goal-item p {
+    font-size: 14px;
+    margin: 0;
+}
+ 
+/* ============================================================
+   BLOQUE 7: MEDIA QUERIES — RESPONSIVE (700px o menos)
+   ============================================================ */
+ 
+@media (max-width: 700px) {
+ 
+    /* Intro pasa a columna */
+    #intro {
+        flex-direction: column;
+        text-align: center;
+    }
+ 
+    .intro-badges {
+        justify-content: center;
+    }
+ 
+    /* Cards: una por fila */
+    .card {
+        width: 100%;
+    }
+ 
+    /* Metas: una por fila */
+    .goal-item {
+        width: 100%;
+    }
+ 
+    /* Barra de progreso ocupa todo el ancho */
+    .progress-bar {
+        min-width: auto;
+        width: 100%;
+    }
+}
