@@ -122,6 +122,14 @@
     font-size: 13px;
     font-weight: bold;
 }
+.card-item {
+    border-left: 3px solid #1b7505;
+    background-color: white;
+    padding: 6px 10px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #222;
+}
  
 /* IDs individuales por card */
 #card-html       { border-left-color: #e44d26; }
@@ -228,7 +236,22 @@
         flex-direction: column;
         text-align: center;
     }
- 
+    .contenedor-piramide{
+        display:flex;
+        justify-content: center;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 8px;
+        justify-content: center;
+    }
+    nav a{
+        width: auto;
+    }
+    nav a:first-child {
+        grid-column: 1 / -1;
+    }
     .intro-badges {
         justify-content: center;
     }
@@ -247,5 +270,18 @@
     .progress-bar {
         min-width: auto;
         width: 100%;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 8px;
+    }
+    nav a{
+        width: calc(50% - 8px);
+        text-align: center;
+        margin: 0;
+        
     }
 }
