@@ -116,4 +116,4 @@ Año: 2026
 - El archivo `general.css` contiene estilos globales compartidos por todas las páginas
 - Las imágenes están almacenadas en la carpeta `img/`
 - El proyecto fue desarrollado como práctica de la Unidad 2
- 
+ # PracticaBooststrap
